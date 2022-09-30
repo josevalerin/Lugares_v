@@ -1,20 +1,17 @@
 package com.lugares.ui.lugar
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.findNavController
-import com.lugares.R
-import com.lugares.databinding.FragmentLugarBinding
+import com.lugares.databinding.FragmentAddLugarBinding
 import com.lugares.viewModel.LugarViewModel
 
-class LugarFragment : Fragment() {
+class AddLugarFragment : Fragment() {
 
-    private var _binding: FragmentLugarBinding? = null
+    private var _binding: FragmentAddLugarBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -28,11 +25,7 @@ class LugarFragment : Fragment() {
         val homeViewModel =
             ViewModelProvider(this).get(LugarViewModel::class.java)
 
-        _binding = FragmentLugarBinding.inflate(inflater, container, false)
-
-        binding.addLugarFabButton.setOnClickListener{
-            findNavController().navigate(R.id.action_nav_lugar_to_addLugarFragment  )
-        }
+        _binding = FragmentAddLugarBinding.inflate(inflater, container, false)
 
         return binding.root
     }
