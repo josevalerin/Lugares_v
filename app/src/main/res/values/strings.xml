@@ -17,7 +17,7 @@
         <string name="msg_correo">Email (lugar@xxxx.xxx)</string>
         <string name="msg_telefono">Telefono (xxxx-xxxx)</string>
         <string name="msg_web">Sitio Web</string>
-        <string name="bt_add_lugar">Agregar</string>
+        <string name="bt_add_lugar">Agregar Lugar</string>
         <string name="msg_lugar_added">Lugar agregado</string>
         <string name="msg_data">Faltan datos</string>
     <string name="b">Button</string>
