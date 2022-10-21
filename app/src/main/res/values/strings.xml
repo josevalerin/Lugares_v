@@ -13,6 +13,7 @@
     <string name="menu_lugar">Lugares</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
         <string name="msg_nombre">Nombre del lugar</string>
         <string name="msg_correo">Email (lugar@xxxx.xxx)</string>
         <string name="msg_telefono">Telefono (xxxx-xxxx)</string>
@@ -20,6 +21,26 @@
         <string name="bt_add_lugar">Agregar Lugar</string>
         <string name="msg_lugar_added">Lugar agregado</string>
         <string name="msg_data">Faltan datos</string>
+        <string name="bt_ubdate_lugar">Actualizar Lugar</string>
+        <string name="msg_lugar_update">Lugar actualizado</string>
+        <string name="bt_delete_lugar">Eliminar Lugar</string>
+        <string name="msg_lugar_deleted">Lugar eliminado</string>
+        <string name="msg_pregunta_deleted">¿Esta seguro de elimnar el lugar </string>
+        <string name="msg_si">Si</string>
+        <string name="msg_no">No</string>
+
+    <string name="msg_enviar_correo">Enviar correo electrónico</string>
+    <string name="msg_phone_call">Realizar llamada telefónica</string>
+    <string name="msg_whatsapp_send">Enviar mensaje WhatsApp</string>
+    <string name="msg_web_view">Abrir sitio Web</string>
+    <string name="msg_map_view">Ver lugar en mapa</string>
+    <string name="tv_latitud_lb">Latitud</string>
+    <string name="tv_longitud_lb">Longitud</string>
+    <string name="tv_altura_lb">Altura</string>
+    <string name="msg_saludos">Saludos amigos</string>
+    <string name="msg_mensaje_correo">Le escribo este correo para</string>
+    <string name="error">Error</string>
+
     <string name="b">Button</string>
 
 

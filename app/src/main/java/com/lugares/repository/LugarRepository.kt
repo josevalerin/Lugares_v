@@ -13,11 +13,11 @@ class LugarRepository(private val lugarDao: LugarDao) {
             //Es un lugar nuevo...
             lugarDao.addLugar(lugar)
         }else {
-            lugarDao.addLugar(lugar)
+            lugarDao.updateLugar(lugar)
         }
     }
     suspend fun deleteLugar(lugar: Lugar){
-        if(lugar.id==0){
+        if(lugar.id!=0){
             //si el id tiene un valor lo intento eliminar
             lugarDao.deleteLugar(lugar)
         }

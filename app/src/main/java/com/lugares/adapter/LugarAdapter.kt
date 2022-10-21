@@ -1,10 +1,13 @@
 package com.lugares.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.lugares.databinding.LugarFilaBinding
 import com.lugares.model.Lugar
+import com.lugares.ui.lugar.LugarFragmentDirections
 
 class LugarAdapter : RecyclerView.Adapter<LugarAdapter.LugarViewHolder>(){
 
@@ -15,6 +18,14 @@ class LugarAdapter : RecyclerView.Adapter<LugarAdapter.LugarViewHolder>(){
             itemBinding.tvNombre.text = lugar.nombre
             itemBinding.tvCorreo.text = lugar.correo
             itemBinding.tvTelefono.text = lugar.telefono
+            itemBinding.vistaFila.setOnClickListener{
+                //se cra una acccion para navegar a update pasadno un argumento lugar
+                val action = LugarFragmentDirections
+                    .actionNavLugarToUpdateLugarFragment(lugar)
+
+                //afectivamente se pasa al fragemnto...
+                itemView.findNavController().navigate(action)
+            }
 
         }
 
@@ -24,6 +35,7 @@ class LugarAdapter : RecyclerView.Adapter<LugarAdapter.LugarViewHolder>(){
 
 
 // Esta funcion crea "cajitas" para cada lugar.. en memoria
+    @SuppressLint("SuspiciousIndentation")
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LugarViewHolder {
         val itemBinding = LugarFilaBinding
             .inflate(LayoutInflater.from(parent.context),
